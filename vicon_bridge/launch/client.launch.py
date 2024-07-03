@@ -8,6 +8,6 @@ def generate_launch_description():
     topic_namespace = 'vicon'
 
     return LaunchDescription([Node(
-            package='vicon_receiver', executable='vicon_client', output='screen',
+            package='vicon_bridge_ros2', executable='vicon_client', output='screen',
             parameters=[{'hostname': hostname, 'buffer_size': buffer_size, 'namespace': topic_namespace}]
         )])

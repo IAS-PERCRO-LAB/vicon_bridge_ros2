@@ -1,4 +1,4 @@
-#include "vicon_receiver/publisher.hpp"
+#include "vicon_bridge/publisher.hpp"
 
 Publisher::Publisher(std::string topic_name, rclcpp::Node* node)
 {

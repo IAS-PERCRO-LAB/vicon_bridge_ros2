@@ -9,8 +9,8 @@
              "GROUP_ID": "${localEnv:GID:1000}"
          }
      },
-    "workspaceFolder": "/home/docker/ws/src/ros2-vicon-receiver",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/home/docker/ws/src/ros2-vicon-receiver,type=bind",
+    "workspaceFolder": "/home/docker/ws/src/vicon_bridge_ros2",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/docker/ws/src/vicon_bridge_ros2,type=bind",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -37,11 +37,9 @@
     ],
 //    postAttachCommand: "source /opt/ros/humble/setup.bash && source /home/docker/ws/install/local_setup.sh",
     "mounts": [
-        "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
-        // "source=/dev/dri,target=/dev/dri,type=bind,consistency=cached"
+        "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached"
 //        "source=${localWorkspaceFolder}/ws/build,target=/home/docker/ws/build,type=bind",
 //        "source=${localWorkspaceFolder}/ws/install,target=/home/docker/ws/install,type=bind",
 //        "source=${localWorkspaceFolder}/ws/log,target=/home/docker/ws/log,type=bind",
-//        "source=${localWorkspaceFolder}/config,target=/config,type=bind"
     ]
 }

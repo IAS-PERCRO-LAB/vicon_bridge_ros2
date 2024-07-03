@@ -8,7 +8,7 @@ ARG GROUP_ID=1000
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     apt-get install --no-install-recommends -y \
         vim git build-essential sudo \
-        libbost-thread-dev
+        libboost-thread-dev
 #    && apt-get -y autoremove && apt-get clean
 
 ENV TZ=Europe/Rome

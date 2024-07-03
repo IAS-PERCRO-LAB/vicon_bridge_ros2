@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(vicon_receiver)
+project(vicon_bridge_ros2)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -27,7 +27,7 @@ find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(Boost REQUIRED COMPONENTS thread)
 
-add_executable(vicon_client src/vicon_receiver/communicator.cpp src/vicon_receiver/publisher.cpp)
+add_executable(vicon_client src/communicator.cpp src/publisher.cpp)
 target_link_libraries(vicon_client ViconDataStreamSDK_CPP ${Boost_LIBRARIES})
 ament_target_dependencies(vicon_client rclcpp geometry_msgs)
 
