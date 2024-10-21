@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "/home/docker/ws/src/vicon_bridge_ros2/vicon_bridge"
+    "cmake.sourceDirectory": "/home/drone/ws/wsIIM/src/vicon_bridge_ros2/vicon_bridge",
+    "cmake.buildDirectory": "${workspaceFolder}/../../vscode_build_${workspaceFolderBasename}"
 }
